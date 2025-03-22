@@ -29,90 +29,93 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
-    description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
-    id: 'project1',
+    name: "Sketch 1",
+    description: "A collection of my personal sketches displayed in a Next.js app with Kubernetes.",
+    link: "http://localhost:3000",
+    video: "sketches\\1.jpg",
+    id: "project1",
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
-    id: 'project2',
+    name: "Sketch 2",
+    description: "Another sketch from my collection.",
+    link: "http://localhost:3000",
+    video: "sketches\\2.jpg",
+    id: "project2",
   },
+  {
+    name: "Sketch 3",
+    description: "Another sketch from my collection.",
+    link: "http://localhost:3000",
+    video: "sketches\\3.jpg",
+    id: "project3",
+  },
+  {
+    name: "Sketch 4",
+    description: "Another sketch from my collection.",
+    link: "http://localhost:3000",
+    video: "sketches\\4.jpg",
+    id: "project4",
+  },
+  {
+    name: "Sketch 5",
+    description: "Another sketch from my collection.",
+    link: "http://localhost:3000",
+    video: "sketches\\5.jpg",
+    id: "project5",
+  },
+  {
+    name: "Sketch 6",
+    description: "Another sketch from my collection.",
+    link: "http://localhost:3000",
+    video: "sketches\\6.jpg",
+    id: "project6",
+  }
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
+    company: 'Huware',
+    title: 'Data Engineer',
+    start: 'September 2023',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: 'https://.com',
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
+    company: 'Ali Big S.R.L.',
+    title: 'Data Scientist',
+    start: 'April 2022',
+    end: 'May 2023',
+    link: 'https://.com',
     id: 'work2',
-  },
-  {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work3',
   },
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
   {
     title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    description: 'My journey creating a Next.js app with Kubernetes to showcase my sketches.',
+    link: '/blog/sketch-gallery',
     uid: 'blog-1',
-  },
-  {
-    title: 'Why I left my job to start my own company',
-    description:
-      'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-2',
-  },
-  {
-    title: 'What I learned from my first year of freelancing',
-    description:
-      'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-3',
-  },
+  }
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
-  },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    link: 'https://github.com/weather2602',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/raghavnishant/',
+  },
+  {
+    label: 'Twitter',
+    link: 'https://twitter.com/',
   },
   {
     label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://www.instagram.com/',
   },
 ]
 

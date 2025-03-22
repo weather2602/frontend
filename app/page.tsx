@@ -20,6 +20,7 @@ import {
   SOCIAL_LINKS,
 } from './data'
 
+// Animation variants
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
   visible: {
@@ -39,11 +40,7 @@ const TRANSITION_SECTION = {
   duration: 0.3,
 }
 
-type ProjectVideoProps = {
-  src: string
-}
-
-function ProjectVideo({ src }: ProjectVideoProps) {
+function ProjectImage({ src }: { src: string }) {
   return (
     <MorphingDialog
       transition={{
@@ -53,22 +50,18 @@ function ProjectVideo({ src }: ProjectVideoProps) {
       }}
     >
       <MorphingDialogTrigger>
-        <video
+        <img
           src={src}
-          autoPlay
-          loop
-          muted
-          className="aspect-video w-full cursor-zoom-in rounded-xl"
+          alt="Project Image"
+          className="w-full max-w-md cursor-zoom-in rounded-xl object-contain md:max-w-lg lg:max-w-xl"
         />
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
-        <MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
-          <video
+        <MorphingDialogContent className="relative rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
+          <img
             src={src}
-            autoPlay
-            loop
-            muted
-            className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+            alt="Project Image"
+            className="w-full max-w-full max-h-[50vh] rounded-xl object-contain md:max-h-[70vh] lg:max-h-[80vh]"
           />
         </MorphingDialogContent>
         <MorphingDialogClose
@@ -86,7 +79,7 @@ function ProjectVideo({ src }: ProjectVideoProps) {
         </MorphingDialogClose>
       </MorphingDialogContainer>
     </MorphingDialog>
-  )
+  );
 }
 
 function MagneticSocialLink({
@@ -120,7 +113,7 @@ function MagneticSocialLink({
         </svg>
       </a>
     </Magnetic>
-  )
+  );
 }
 
 export default function Personal() {
@@ -136,9 +129,11 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
+          <p className="text-zinc-600 dark:text-zinc-400 mb-4">
+            Data Engineer with nearly 2 years of experience in building scalable data pipelines, ETL workflows, and cloud-based solutions, complemented by over 3 years of Professional Python development expertise from data science and engineering roles.
+          </p>
           <p className="text-zinc-600 dark:text-zinc-400">
-            Focused on creating intuitive and performant web experiences.
-            Bridging the gap between design and development.
+            Proficient in Python, SQL, and cloud platforms like GCP and AWS. Passionate about optimizing data processes, implementing CI/CD for data engineering projects, and exploring cloud and DevOps practices to support innovative data solutions.
           </p>
         </div>
       </motion.section>
@@ -152,7 +147,7 @@ export default function Personal() {
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
+                <ProjectImage src={project.video} />
               </div>
               <div className="px-1">
                 <a
@@ -266,5 +261,5 @@ export default function Personal() {
         </div>
       </motion.section>
     </motion.main>
-  )
+  );
 }
