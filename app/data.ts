@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
     link: "http://localhost:3000",
     video: "sketches\\2.jpg",
     id: "project2",
-  },
+  }/* ,
   {
     name: "Sketch 3",
     description: "Another sketch from my collection.",
@@ -69,7 +69,7 @@ export const PROJECTS: Project[] = [
     link: "http://localhost:3000",
     video: "sketches\\6.jpg",
     id: "project6",
-  }
+  } */
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
