@@ -39,10 +39,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - Run the backend db (mongodb)
 - Run the backend and auth services
-- Run npm commands:
+
+### Build the image:
+
+- Open a terminal in the frontend directory and run:
+
   ```sh
-  npm install
-  npm run dev
+  docker build -t frontend .
+  ```
+
+- Run the container:
+
+  ```sh
+  docker run -d -p 3000:3000 frontend
   ```
 
 </details>
